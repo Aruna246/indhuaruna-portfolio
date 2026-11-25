@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@keyframes floatOrb1 {
+  0% {
+    transform: translate(0px, 0px) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(80px, -60px) scale(1.15) rotate(120deg);
+  }
+  66% {
+    transform: translate(-50px, 70px) scale(0.9) rotate(240deg);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1) rotate(360deg);
+  }
+}
+
+@keyframes floatOrb2 {
+  0% {
+    transform: translate(0px, 0px) scale(1.1) rotate(0deg);
+  }
+  33% {
+    transform: translate(-90px, 60px) scale(0.95) rotate(-120deg);
+  }
+  66% {
+    transform: translate(60px, -80px) scale(1.2) rotate(-240deg);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1.1) rotate(-360deg);
+  }
+}
+
+@keyframes floatOrb3 {
+  0% {
+    transform: translate(0px, 0px) scale(0.9) rotate(0deg);
+  }
+  50% {
+    transform: translate(70px, 80px) scale(1.25) rotate(180deg);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(0.9) rotate(360deg);
+  }
+}
+
+@keyframes cyberWave {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+.animate-float-orb-1 {
+  animation: floatOrb1 18s ease-in-out infinite;
+}
+
+.animate-float-orb-2 {
+  animation: floatOrb2 22s ease-in-out infinite;
+}
+
+.animate-float-orb-3 {
+  animation: floatOrb3 26s ease-in-out infinite;
+}
+
+.animate-cyber-grid {
+  animation: cyberWave 20s linear infinite;
+}
